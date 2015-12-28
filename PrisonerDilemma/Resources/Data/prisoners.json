@@ -1,0 +1,9 @@
+{
+	"prisoners": [
+		{
+			"player": "bdolmar",
+			"discipline": "mobile",
+			"appURL": "bin/Prisoner"
+		}
+	]
+}

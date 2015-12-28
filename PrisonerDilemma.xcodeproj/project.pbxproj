@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */; };
+		58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC5651C2E3B65008B6596 /* Main.storyboard */; };
+		58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */; };
+		58DDC5811C2E4884008B6596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC57D1C2E4884008B6596 /* Assets.xcassets */; };
+		58DDC5821C2E4884008B6596 /* prisoners.json in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC57F1C2E4884008B6596 /* prisoners.json */; };
+		58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5841C2E489F008B6596 /* MainViewController.swift */; };
+		58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5871C2E4AEA008B6596 /* Prisoner.swift */; };
+		58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC5891C2F11C7008B6596 /* Genome.framework */; };
+		58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC5891C2F11C7008B6596 /* Genome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58DDC58E1C2F11C7008B6596 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58A1C2F11C7008B6596 /* Realm.framework */; };
+		58DDC58F1C2F11C7008B6596 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58A1C2F11C7008B6596 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58DDC5901C2F11C7008B6596 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */; };
+		58DDC5911C2F11C7008B6596 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58DDC56E1C2E3B66008B6596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58DDC5541C2E3B65008B6596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58DDC55B1C2E3B65008B6596;
+			remoteInfo = PrisonerDilemma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58DDC5921C2F11C7008B6596 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				58DDC58F1C2F11C7008B6596 /* Realm.framework in Embed Frameworks */,
+				58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */,
+				58DDC5911C2F11C7008B6596 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonerDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58DDC5661C2E3B65008B6596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58DDC5681C2E3B66008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DDC56D1C2E3B66008B6596 /* PrisonerDilemmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrisonerDilemmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrisonerDilemmaTests.swift; sourceTree = "<group>"; };
+		58DDC5731C2E3B66008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DDC57D1C2E4884008B6596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58DDC57F1C2E4884008B6596 /* prisoners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prisoners.json; sourceTree = "<group>"; };
+		58DDC5841C2E489F008B6596 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		58DDC5871C2E4AEA008B6596 /* Prisoner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prisoner.swift; sourceTree = "<group>"; };
+		58DDC5891C2F11C7008B6596 /* Genome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Genome.framework; path = Carthage/Build/Mac/Genome.framework; sourceTree = "<group>"; };
+		58DDC58A1C2F11C7008B6596 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		58DDC59B1C2F14E6008B6596 /* PrisonerDilemmaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrisonerDilemmaKit.h; sourceTree = "<group>"; };
+		58DDC59D1C2F14E6008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DDC5A91C2F14E6008B6596 /* PrisonerDilemmaKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrisonerDilemmaKitTests.swift; sourceTree = "<group>"; };
+		58DDC5AB1C2F14E6008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58DDC5591C2E3B65008B6596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DDC58E1C2F11C7008B6596 /* Realm.framework in Frameworks */,
+				58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */,
+				58DDC5901C2F11C7008B6596 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DDC56A1C2E3B66008B6596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58DDC5531C2E3B65008B6596 = {
+			isa = PBXGroup;
+			children = (
+				58DDC55E1C2E3B65008B6596 /* PrisonerDilemma */,
+				58DDC5701C2E3B66008B6596 /* PrisonerDilemmaTests */,
+				58DDC59A1C2F14E6008B6596 /* PrisonerDilemmaKit */,
+				58DDC5A81C2F14E6008B6596 /* PrisonerDilemmaKitTests */,
+				58DDC5931C2F12EE008B6596 /* Frameworks */,
+				58DDC55D1C2E3B65008B6596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58DDC55D1C2E3B65008B6596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */,
+				58DDC56D1C2E3B66008B6596 /* PrisonerDilemmaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58DDC55E1C2E3B65008B6596 /* PrisonerDilemma */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */,
+				58DDC5681C2E3B66008B6596 /* Info.plist */,
+				58DDC5651C2E3B65008B6596 /* Main.storyboard */,
+				58DDC5861C2E4AB5008B6596 /* Model */,
+				58DDC57C1C2E4884008B6596 /* Resources */,
+				58DDC5801C2E4884008B6596 /* Services */,
+				58DDC5831C2E489F008B6596 /* ViewControllers */,
+			);
+			path = PrisonerDilemma;
+			sourceTree = "<group>";
+		};
+		58DDC5701C2E3B66008B6596 /* PrisonerDilemmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */,
+				58DDC5731C2E3B66008B6596 /* Info.plist */,
+			);
+			path = PrisonerDilemmaTests;
+			sourceTree = "<group>";
+		};
+		58DDC57C1C2E4884008B6596 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC57D1C2E4884008B6596 /* Assets.xcassets */,
+				58DDC57E1C2E4884008B6596 /* Data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58DDC57E1C2E4884008B6596 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC57F1C2E4884008B6596 /* prisoners.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		58DDC5801C2E4884008B6596 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		58DDC5831C2E489F008B6596 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC5841C2E489F008B6596 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		58DDC5861C2E4AB5008B6596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC5871C2E4AEA008B6596 /* Prisoner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58DDC5931C2F12EE008B6596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC5891C2F11C7008B6596 /* Genome.framework */,
+				58DDC58A1C2F11C7008B6596 /* Realm.framework */,
+				58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58DDC59A1C2F14E6008B6596 /* PrisonerDilemmaKit */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC59B1C2F14E6008B6596 /* PrisonerDilemmaKit.h */,
+				58DDC59D1C2F14E6008B6596 /* Info.plist */,
+			);
+			path = PrisonerDilemmaKit;
+			sourceTree = "<group>";
+		};
+		58DDC5A81C2F14E6008B6596 /* PrisonerDilemmaKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				58DDC5A91C2F14E6008B6596 /* PrisonerDilemmaKitTests.swift */,
+				58DDC5AB1C2F14E6008B6596 /* Info.plist */,
+			);
+			path = PrisonerDilemmaKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58DDC55B1C2E3B65008B6596 /* PrisonerDilemma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DDC5761C2E3B66008B6596 /* Build configuration list for PBXNativeTarget "PrisonerDilemma" */;
+			buildPhases = (
+				58DDC5581C2E3B65008B6596 /* Sources */,
+				58DDC5591C2E3B65008B6596 /* Frameworks */,
+				58DDC55A1C2E3B65008B6596 /* Resources */,
+				58DDC5921C2F11C7008B6596 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrisonerDilemma;
+			productName = PrisonerDilemma;
+			productReference = 58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58DDC56C1C2E3B66008B6596 /* PrisonerDilemmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DDC5791C2E3B66008B6596 /* Build configuration list for PBXNativeTarget "PrisonerDilemmaTests" */;
+			buildPhases = (
+				58DDC5691C2E3B66008B6596 /* Sources */,
+				58DDC56A1C2E3B66008B6596 /* Frameworks */,
+				58DDC56B1C2E3B66008B6596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58DDC56F1C2E3B66008B6596 /* PBXTargetDependency */,
+			);
+			name = PrisonerDilemmaTests;
+			productName = PrisonerDilemmaTests;
+			productReference = 58DDC56D1C2E3B66008B6596 /* PrisonerDilemmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58DDC5541C2E3B65008B6596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ben Dolmar";
+				TargetAttributes = {
+					58DDC55B1C2E3B65008B6596 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					58DDC56C1C2E3B66008B6596 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 58DDC55B1C2E3B65008B6596;
+					};
+				};
+			};
+			buildConfigurationList = 58DDC5571C2E3B65008B6596 /* Build configuration list for PBXProject "PrisonerDilemma" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58DDC5531C2E3B65008B6596;
+			productRefGroup = 58DDC55D1C2E3B65008B6596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58DDC55B1C2E3B65008B6596 /* PrisonerDilemma */,
+				58DDC56C1C2E3B66008B6596 /* PrisonerDilemmaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58DDC55A1C2E3B65008B6596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DDC5811C2E4884008B6596 /* Assets.xcassets in Resources */,
+				58DDC5821C2E4884008B6596 /* prisoners.json in Resources */,
+				58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DDC56B1C2E3B66008B6596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58DDC5581C2E3B65008B6596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */,
+				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
+				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DDC5691C2E3B66008B6596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58DDC56F1C2E3B66008B6596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58DDC55B1C2E3B65008B6596 /* PrisonerDilemma */;
+			targetProxy = 58DDC56E1C2E3B66008B6596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58DDC5651C2E3B65008B6596 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58DDC5661C2E3B65008B6596 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58DDC5741C2E3B66008B6596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58DDC5751C2E3B66008B6596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		58DDC5771C2E3B66008B6596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PrisonerDilemma/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58DDC5781C2E3B66008B6596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PrisonerDilemma/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58DDC57A1C2E3B66008B6596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrisonerDilemmaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrisonerDilemma.app/Contents/MacOS/PrisonerDilemma";
+			};
+			name = Debug;
+		};
+		58DDC57B1C2E3B66008B6596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrisonerDilemmaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrisonerDilemma.app/Contents/MacOS/PrisonerDilemma";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58DDC5571C2E3B65008B6596 /* Build configuration list for PBXProject "PrisonerDilemma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DDC5741C2E3B66008B6596 /* Debug */,
+				58DDC5751C2E3B66008B6596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DDC5761C2E3B66008B6596 /* Build configuration list for PBXNativeTarget "PrisonerDilemma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DDC5771C2E3B66008B6596 /* Debug */,
+				58DDC5781C2E3B66008B6596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DDC5791C2E3B66008B6596 /* Build configuration list for PBXNativeTarget "PrisonerDilemmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DDC57A1C2E3B66008B6596 /* Debug */,
+				58DDC57B1C2E3B66008B6596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58DDC5541C2E3B65008B6596 /* Project object */;
+}

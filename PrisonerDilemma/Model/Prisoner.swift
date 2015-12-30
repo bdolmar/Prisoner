@@ -9,14 +9,12 @@
 import Foundation
 import Genome
 
-public struct Prisoner {
-    public var player: String = ""
-    public var discipline: String = ""
-    public var appURL: NSURL = NSURL()
+struct Prisoner {
+    var player: String = ""
+    var discipline: String = ""
+    var appURL: NSURL = NSURL()
     
-    public init() {}
-    
-    public var appType: PrisonerAppTypes {
+    var appType: PrisonerAppTypes {
         let pathComponent = self.appURL.lastPathComponent?.lowercaseString
         if let unwrappedPathComponent = pathComponent, appType = PrisonerAppTypes(rawValue: unwrappedPathComponent) {
             return appType
@@ -27,14 +25,14 @@ public struct Prisoner {
 }
 
 extension Prisoner : BasicMappable {
-    public mutating func sequence(map: Map) throws {
+    mutating func sequence(map: Map) throws {
         try player <~> map["player"]
         try discipline <~> map["discipline"]
         try appURL <~> map["appURL"]
     }
 }
 
-public enum PrisonerAppTypes: String {
+enum PrisonerAppTypes: String {
     case JVM = "jar"
     case DotNET = "exe"
     case Ruby = "rb"

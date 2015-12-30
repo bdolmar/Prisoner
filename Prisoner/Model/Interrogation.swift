@@ -44,7 +44,7 @@ extension Interrogation: CustomStringConvertible {
     }
 }
 
-//MARK: Interrogation Argument Constants and Related Extentions
+//MARK: - Interrogation Argument Constants and Related Extentions
 
 enum InterrogationArguments: Int {
     case AppName = 0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583C586B1C31A7630064E62A /* Gamemaker.swift */; };
 		58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */; };
 		58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC5651C2E3B65008B6596 /* Main.storyboard */; };
 		58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		583C586B1C31A7630064E62A /* Gamemaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamemaker.swift; sourceTree = "<group>"; };
 		58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonerDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DDC5661C2E3B65008B6596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		58DDC5801C2E4884008B6596 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				583C586B1C31A7630064E62A /* Gamemaker.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */,
 				58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */,
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,

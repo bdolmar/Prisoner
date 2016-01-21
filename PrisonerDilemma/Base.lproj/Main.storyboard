@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -670,13 +671,26 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="MainViewController" customModule="PrisonerDilemma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="1080"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="tuA-XZ-fkB" customClass="ScoreboardView" customModule="PrisonerDilemma" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="600" width="480" height="480"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tuA-XZ-fkB" secondAttribute="height" multiplier="1:1" id="keq-r4-Cj6"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tuA-XZ-fkB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Dph-W3-HqP"/>
+                            <constraint firstItem="tuA-XZ-fkB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="bA3-wa-m38"/>
+                            <constraint firstAttribute="trailing" secondItem="tuA-XZ-fkB" secondAttribute="trailing" id="qeL-Md-IFz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="770" y="603"/>
         </scene>
     </scenes>
 </document>

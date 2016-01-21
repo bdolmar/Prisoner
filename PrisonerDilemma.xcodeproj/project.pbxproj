@@ -17,13 +17,11 @@
 		58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5871C2E4AEA008B6596 /* Prisoner.swift */; };
 		58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC5891C2F11C7008B6596 /* Genome.framework */; };
 		58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC5891C2F11C7008B6596 /* Genome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58DDC58E1C2F11C7008B6596 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58A1C2F11C7008B6596 /* Realm.framework */; };
-		58DDC58F1C2F11C7008B6596 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58A1C2F11C7008B6596 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58DDC5901C2F11C7008B6596 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */; };
-		58DDC5911C2F11C7008B6596 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7991C50444A00ACEC52 /* Disciplines.swift */; };
 		58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */; };
 		58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */; };
+		58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */; };
+		58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				58DDC58F1C2F11C7008B6596 /* Realm.framework in Embed Frameworks */,
 				58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */,
-				58DDC5911C2F11C7008B6596 /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,8 +62,6 @@
 		58DDC5841C2E489F008B6596 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		58DDC5871C2E4AEA008B6596 /* Prisoner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prisoner.swift; sourceTree = "<group>"; };
 		58DDC5891C2F11C7008B6596 /* Genome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Genome.framework; path = Carthage/Build/Mac/Genome.framework; sourceTree = "<group>"; };
-		58DDC58A1C2F11C7008B6596 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
-		58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		58DDC59B1C2F14E6008B6596 /* PrisonerDilemmaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrisonerDilemmaKit.h; sourceTree = "<group>"; };
 		58DDC59D1C2F14E6008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58DDC5A91C2F14E6008B6596 /* PrisonerDilemmaKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrisonerDilemmaKitTests.swift; sourceTree = "<group>"; };
@@ -75,6 +69,8 @@
 		58E5F7991C50444A00ACEC52 /* Disciplines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; };
 		58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionStandings.swift; sourceTree = "<group>"; };
 		58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionRound.swift; sourceTree = "<group>"; };
+		58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58DDC58E1C2F11C7008B6596 /* Realm.framework in Frameworks */,
 				58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */,
-				58DDC5901C2F11C7008B6596 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +119,12 @@
 				58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */,
 				58DDC5681C2E3B66008B6596 /* Info.plist */,
 				58DDC5651C2E3B65008B6596 /* Main.storyboard */,
+				58E5F7A21C517EB800ACEC52 /* Extensions */,
 				58DDC5861C2E4AB5008B6596 /* Model */,
 				58DDC57C1C2E4884008B6596 /* Resources */,
 				58DDC5801C2E4884008B6596 /* Services */,
 				58DDC5831C2E489F008B6596 /* ViewControllers */,
+				58E5F79F1C51730300ACEC52 /* Views */,
 			);
 			path = PrisonerDilemma;
 			sourceTree = "<group>";
@@ -190,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				58DDC5891C2F11C7008B6596 /* Genome.framework */,
-				58DDC58A1C2F11C7008B6596 /* Realm.framework */,
-				58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,6 +206,22 @@
 				58DDC5AB1C2F14E6008B6596 /* Info.plist */,
 			);
 			path = PrisonerDilemmaKitTests;
+			sourceTree = "<group>";
+		};
+		58E5F79F1C51730300ACEC52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58E5F7A21C517EB800ACEC52 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */,
 				583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */,
 				58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */,
 				58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */,
@@ -323,6 +334,7 @@
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
 				58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */,
+				58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

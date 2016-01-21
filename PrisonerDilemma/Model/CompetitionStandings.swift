@@ -7,14 +7,18 @@
 //
 
 import Foundation
+import Genome
 
-class CompetitionStandings {
+struct CompetitionStandings {
     var leaderboard: [Prisoner] = []
-    var currentRound: CompetitionRound
+    var currentRound: CompetitionRound = CompetitionRound(player1: Prisoner(), player2: Prisoner(), roundNumber: 0)
 }
 
 //MARK: - Genome Support
 
-extension Prisoner : BasicMappable {
-    
+extension CompetitionStandings : BasicMappable {
+    mutating func sequence(map: Map) throws {
+        try leaderboard <~> map["entrantRankings"]
+        try currentRound <~> map["currentMatch"]
+    }
 }

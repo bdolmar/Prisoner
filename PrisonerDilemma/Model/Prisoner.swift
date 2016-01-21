@@ -11,7 +11,7 @@ import Genome
 
 struct Prisoner {
     var username: String = ""
-    var discipline: Discipline = ""
+    var discipline: Discipline = .Unknown
     var sentence: Int = 0
     var confessions: Int = 0
     var silents: Int = 0

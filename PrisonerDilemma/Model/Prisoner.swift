@@ -23,7 +23,13 @@ struct Prisoner {
 extension Prisoner : BasicMappable {
     mutating func sequence(map: Map) throws {
         try username <~> map["username"]
-        try discipline <~> map["discipline"].transformToJson() { $0.rawValue }
+        try discipline <~ map["discipline"].transformFromJson {
+            if let parsedDiscipline = Discipline(rawValue: $0.rawValue) {
+                return parsedDiscipline
+            } else {
+                return .Unknown
+            }
+        }
         try sentence <~> map["sentence"]
         try confessions ~> map["confessions"]
         try silents <~> map["silents"]

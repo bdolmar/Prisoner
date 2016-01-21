@@ -22,6 +22,7 @@
 		58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */; };
 		58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */; };
 		58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */; };
+		A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAA1EE1C5173A300B74D53 /* JailService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionRound.swift; sourceTree = "<group>"; };
 		58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtensions.swift; sourceTree = "<group>"; };
+		A6AAA1EE1C5173A300B74D53 /* JailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				583C586B1C31A7630064E62A /* Gamemaker.swift */,
+				A6AAA1EE1C5173A300B74D53 /* JailService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */,
 				58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */,
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
+				A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
 				58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */,
 				58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */,

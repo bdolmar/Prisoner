@@ -21,6 +21,9 @@
 		58DDC58F1C2F11C7008B6596 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58A1C2F11C7008B6596 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58DDC5901C2F11C7008B6596 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */; };
 		58DDC5911C2F11C7008B6596 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58DDC58B1C2F11C7008B6596 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7991C50444A00ACEC52 /* Disciplines.swift */; };
+		58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */; };
+		58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		58DDC59D1C2F14E6008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58DDC5A91C2F14E6008B6596 /* PrisonerDilemmaKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrisonerDilemmaKitTests.swift; sourceTree = "<group>"; };
 		58DDC5AB1C2F14E6008B6596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E5F7991C50444A00ACEC52 /* Disciplines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; };
+		58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionStandings.swift; sourceTree = "<group>"; };
+		58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionRound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				58DDC5871C2E4AEA008B6596 /* Prisoner.swift */,
+				58E5F7991C50444A00ACEC52 /* Disciplines.swift */,
+				58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */,
+				58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,9 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */,
+				58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */,
+				58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */,
 				58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */,
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
+				58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

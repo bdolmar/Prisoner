@@ -10,35 +10,23 @@ import Foundation
 import Genome
 
 struct Prisoner {
-    var player: String = ""
-    var discipline: String = ""
-    var appURL: NSURL = NSURL()
-    
-    var appType: PrisonerAppTypes {
-        let pathComponent = self.appURL.lastPathComponent?.lowercaseString
-        if let unwrappedPathComponent = pathComponent, appType = PrisonerAppTypes(rawValue: unwrappedPathComponent) {
-            return appType
-        } else {
-            return .Native
-        }
-    }
+    var username: String = ""
+    var discipline: Discipline = ""
+    var sentence: Int = 0
+    var confessions: Int = 0
+    var silents: Int = 0
+    var averageRuntime: Int = 0
 }
+
+//MARK: - Genome Support
 
 extension Prisoner : BasicMappable {
     mutating func sequence(map: Map) throws {
-        try player <~> map["player"]
-        try discipline <~> map["discipline"]
-        try appURL <~> map["appURL"]
+        try username <~> map["username"]
+        try discipline <~> map["discipline"].transformToJson() { $0.rawValue }
+        try sentence <~> map["sentence"]
+        try confessions ~> map["confessions"]
+        try silents <~> map["silents"]
+        try averageRuntime <~> map["averageRuntime"]
     }
-}
-
-enum PrisonerAppTypes: String {
-    case JVM = "jar"
-    case DotNET = "exe"
-    case Ruby = "rb"
-    case PHP = "php"
-    case Python = "py"
-    case JavaScript = "js"
-    case Native = "native"
-    
 }

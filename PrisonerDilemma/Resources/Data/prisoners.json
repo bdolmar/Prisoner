@@ -1,9 +1,160 @@
 {
-	"prisoners": [
-		{
-			"player": "bdolmar",
-			"discipline": "mobile",
-			"appURL": "bin/Prisoner"
-		}
-	]
+    "entrantRankings" : [ {
+                         "username" : "jklun",
+                         "discipline" : "jvm",
+                         "totalSentenceYears" : 48,
+                         "confessions" : 0,
+                         "silents" : 48,
+                         "averageRuntime" : 396
+                         }, {
+                         "username" : "cfein",
+                         "discipline" : "ruby",
+                         "totalSentenceYears" : 99,
+                         "confessions" : 1,
+                         "silents" : 99,
+                         "averageRuntime" : 11
+                         }, {
+                         "username" : "kwatson",
+                         "discipline" : "mobile",
+                         "totalSentenceYears" : 100,
+                         "confessions" : 0,
+                         "silents" : 100,
+                         "averageRuntime" : 178
+                         }, {
+                         "username" : "dgoetsch",
+                         "discipline" : "jvm",
+                         "totalSentenceYears" : 100,
+                         "confessions" : 0,
+                         "silents" : 100,
+                         "averageRuntime" : 1470
+                         }, {
+                         "username" : "epfremme",
+                         "discipline" : "php",
+                         "totalSentenceYears" : 102,
+                         "confessions" : 0,
+                         "silents" : 100,
+                         "averageRuntime" : 85
+                         }, {
+                         "username" : "icoffiel",
+                         "discipline" : "jvm",
+                         "totalSentenceYears" : 159,
+                         "confessions" : 69,
+                         "silents" : 31,
+                         "averageRuntime" : 132
+                         }, {
+                         "username" : "dflor",
+                         "discipline" : "mobile",
+                         "totalSentenceYears" : 164,
+                         "confessions" : 100,
+                         "silents" : 0,
+                         "averageRuntime" : 177
+                         }, {
+                         "username" : "johuff",
+                         "discipline" : "jvm",
+                         "totalSentenceYears" : 174,
+                         "confessions" : 64,
+                         "silents" : 36,
+                         "averageRuntime" : 132
+                         }, {
+                         "username" : "adetrick",
+                         "discipline" : "jvm",
+                         "totalSentenceYears" : 200,
+                         "confessions" : 100,
+                         "silents" : 0,
+                         "averageRuntime" : 347
+                         }, {
+                         "username" : "kness",
+                         "discipline" : "php",
+                         "totalSentenceYears" : 200,
+                         "confessions" : 100,
+                         "silents" : 0,
+                         "averageRuntime" : 73
+                         }, {
+                         "username" : "bdolmar",
+                         "discipline" : "mobile",
+                         "totalSentenceYears" : 204,
+                         "confessions" : 200,
+                         "silents" : 0,
+                         "averageRuntime" : 14
+                         }, {
+                         "username" : "nbrunett",
+                         "discipline" : "php",
+                         "totalSentenceYears" : 218,
+                         "confessions" : 82,
+                         "silents" : 18,
+                         "averageRuntime" : 99
+                         }, {
+                         "username" : "rbanasia",
+                         "discipline" : "mobile",
+                         "totalSentenceYears" : 248,
+                         "confessions" : 100,
+                         "silents" : 48,
+                         "averageRuntime" : 181
+                         }, {
+                         "username" : "vjones",
+                         "discipline" : "php",
+                         "totalSentenceYears" : 298,
+                         "confessions" : 2,
+                         "silents" : 98,
+                         "averageRuntime" : 82
+                         }, {
+                         "username" : "rdeluca",
+                         "discipline" : "client-side",
+                         "totalSentenceYears" : 400,
+                         "confessions" : 200,
+                         "silents" : 0,
+                         "averageRuntime" : 68
+                         } ],
+    "disciplineRankings" : [ {
+                            "name" : "ruby",
+                            "averageSentenceYears" : 99,
+                            "entrants" : 1,
+                            "confessions" : 1,
+                            "silents" : 99,
+                            "averageRuntime" : 8
+                            }, {
+                            "name" : "jvm",
+                            "averageSentenceYears" : 136,
+                            "entrants" : 5,
+                            "confessions" : 233,
+                            "silents" : 215,
+                            "averageRuntime" : 307
+                            }, {
+                            "name" : "mobile",
+                            "averageSentenceYears" : 179,
+                            "entrants" : 4,
+                            "confessions" : 400,
+                            "silents" : 148,
+                            "averageRuntime" : 110
+                            }, {
+                            "name" : "php",
+                            "averageSentenceYears" : 204,
+                            "entrants" : 4,
+                            "confessions" : 184,
+                            "silents" : 216,
+                            "averageRuntime" : 57
+                            }, {
+                            "name" : "client-side",
+                            "averageSentenceYears" : 400,
+                            "entrants" : 1,
+                            "confessions" : 200,
+                            "silents" : 0,
+                            "averageRuntime" : 91
+                            } ],
+    "currentMatch" : {
+        "entrant1" : {
+            "username" : "jklun",
+            "discipline" : "jvm",
+            "lastResponse" : "silent",
+            "sentenceYears" : 48
+        },
+        "entrant2" : {
+            "username" : "rbanasia",
+            "discipline" : "mobile",
+            "lastResponse" : "silent",
+            "sentenceYears" : 48
+        },
+        "startTime" : "2016-01-21T14:23:39.343",
+        "interrogationIndex" : 48
+    }
 }

@@ -38,5 +38,13 @@ class Configuration {
         container.register(JailServiceProtocol.self, name: "live") { resolver in
             JailService(httpService: resolver.resolve(HTTPService.self)!, apiURL: resolver.resolve(NSURL.self, name: "API_URL")!)
         }
+        
+        container.register(PrisonerSerializationPipeline.self) { resolver in
+            PrisonerSerializationPipeline()
+        }
+        
+        container.register(StatisticsRunner.self) { resolver in
+            StatisticsRunner(jailService: resolver.resolve(JailServiceProtocol.self, name: "live")!, pipeline: resolver.resolve(PrisonerSerializationPipeline.self)!)
+        }
     }
 }

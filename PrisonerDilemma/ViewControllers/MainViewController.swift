@@ -13,8 +13,18 @@ class MainViewController: NSViewController {
     @IBOutlet var scoreboardView: ScoreboardView!
     @IBOutlet var leaderboardView: NSTableView!
     
+    private var runner: StatisticsRunner?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let configuration = Configuration()
+        let statisticsRunner = configuration.container.resolve(StatisticsRunner.self)!
+        
+        // Set the delegate
+        statisticsRunner.delegate = self
+        self.runner = statisticsRunner
+        statisticsRunner.startListening()
 
         let player1 = Prisoner(username: "jklun", discipline: .JVM, sentence: 14)
         let player2 = Prisoner(username: "cdavis", discipline: .Mobile, sentence: 4)
@@ -55,5 +65,11 @@ extension MainViewController: NSTableViewDelegate {
     
     func tableView(tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         return 119.0
+    }
+}
+
+extension MainViewController: StatisticsConsumer {
+    func useCompetitionStandings(standings: CompetitionStandings) {
+        // TODO: Add your usage logic here, bdolmar
     }
 }

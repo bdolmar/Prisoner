@@ -25,13 +25,8 @@ extension JailService : JailServiceProtocol {
         return NSURL(string: part, relativeToURL: self.apiURL)
     }
     
-    func fetchScores() -> Void {
-        let pipeline = PrisonerSerializationPipeline()
+    func fetchScores() -> Future<NSData> {
         
-        var future = self.httpService.fetchGET(self.buildAPIUrl("scores")!)
-            .onComplete { (data) -> Void in
-//                let json = pipeline.serialize(data)
-//                return json;
-        }
+        return self.httpService.fetchGET(self.buildAPIUrl("scores")!)
     }
 }

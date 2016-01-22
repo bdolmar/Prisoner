@@ -31,30 +31,7 @@ extension SeedJailService : JailServiceProtocol {
         return promise.future
     }
     
-    func fetchScores() -> Void {
-        let pipeline = PrisonerSerializationPipeline()
-        fetchFileContents()
-            .onSuccess(.Main) { data -> Dictionary<String, AnyObject> in
-                do {
-                    return try pipeline.serialize(data)
-                } catch {
-                    print("Failed to serialize data")
-                }
-                
-                return Dictionary<String, AnyObject>()
-        }
-            .onSuccess(.Main) { rootDictionary -> CompetitionStandings? in
-                do {
-                    return try pipeline.transform(rootDictionary)
-                } catch {
-                    print("Failed to transform data")
-                }
-                
-                return nil
-        }
-            .onSuccess(.Main) { competitionStandings -> Void in
-                print(competitionStandings)
-        }
-        
+    func fetchScores() -> Future<NSData> {
+        return fetchFileContents()
     }
 }

@@ -12,19 +12,12 @@ import FutureKit
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         
         let arenaPath = NSUserDefaults.standardUserDefaults().stringForKey("com.nerdery.arenaPath") ?? NSProcessInfo.processInfo().arguments[0]
         print("arenaPath: \(arenaPath)")
         
-        let configuration = Configuration()
-        let jailService = configuration.container.resolve(JailServiceProtocol.self, name: "seeded")!
-//        let httpService = HTTPService()
-//        let jailService = JailService(httpService: httpService)
-        jailService.fetchScores()
 //        print("environment: \(NSProcessInfo.processInfo().environment)")
     }
 

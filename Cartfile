@@ -1,2 +1,3 @@
 github "realm/realm-cocoa"
 github "LoganWright/Genome" ~> 1.0.8
+github "FutureKit/FutureKit"

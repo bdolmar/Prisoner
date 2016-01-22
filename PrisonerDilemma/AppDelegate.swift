@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import FutureKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -18,6 +19,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let arenaPath = NSUserDefaults.standardUserDefaults().stringForKey("com.nerdery.arenaPath") ?? NSProcessInfo.processInfo().arguments[0]
         print("arenaPath: \(arenaPath)")
+        
+        let jailService = SeedJailService()
+//        let httpService = HTTPService()
+//        let jailService = JailService(httpService: httpService)
+        jailService.fetchScores()
 //        print("environment: \(NSProcessInfo.processInfo().environment)")
     }
 

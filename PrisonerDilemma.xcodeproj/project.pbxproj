@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583C586B1C31A7630064E62A /* Gamemaker.swift */; };
 		58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */; };
 		58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC5651C2E3B65008B6596 /* Main.storyboard */; };
 		58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */; };
@@ -22,7 +21,16 @@
 		58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */; };
 		58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */; };
 		58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */; };
+		A680C3FB1C51BCD6000B32E3 /* DisciplineStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */; };
+		A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */; };
+		A680C3FF1C51C1D2000B32E3 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FE1C51C1D2000B32E3 /* Responses.swift */; };
 		A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAA1EE1C5173A300B74D53 /* JailService.swift */; };
+		A6F147CA1C518AE300CAAC9C /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147C91C518AE300CAAC9C /* HTTPService.swift */; };
+		A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */; };
+		A6F147D01C518FEC00CAAC9C /* FutureKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6F147D21C51918500CAAC9C /* SeedJailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147D11C51918500CAAC9C /* SeedJailService.swift */; };
+		A6F147D41C5191BE00CAAC9C /* JailServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */; };
+		A6F147D61C51968200CAAC9C /* PrisonerSerializationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A6F147D01C518FEC00CAAC9C /* FutureKit.framework in Embed Frameworks */,
 				58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,7 +59,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		583C586B1C31A7630064E62A /* Gamemaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamemaker.swift; sourceTree = "<group>"; };
 		58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonerDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DDC5661C2E3B65008B6596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +80,15 @@
 		58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionRound.swift; sourceTree = "<group>"; };
 		58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtensions.swift; sourceTree = "<group>"; };
+		A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisciplineStatistics.swift; sourceTree = "<group>"; };
+		A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerEntry.swift; sourceTree = "<group>"; };
+		A680C3FE1C51C1D2000B32E3 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		A6AAA1EE1C5173A300B74D53 /* JailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailService.swift; sourceTree = "<group>"; };
+		A6F147C91C518AE300CAAC9C /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FutureKit.framework; path = Carthage/Build/Mac/FutureKit.framework; sourceTree = "<group>"; };
+		A6F147D11C51918500CAAC9C /* SeedJailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedJailService.swift; sourceTree = "<group>"; };
+		A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailServiceProtocol.swift; sourceTree = "<group>"; };
+		A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerSerializationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */,
 				58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,8 +177,11 @@
 		58DDC5801C2E4884008B6596 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				583C586B1C31A7630064E62A /* Gamemaker.swift */,
+				A6F147C91C518AE300CAAC9C /* HTTPService.swift */,
 				A6AAA1EE1C5173A300B74D53 /* JailService.swift */,
+				A6F147D11C51918500CAAC9C /* SeedJailService.swift */,
+				A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */,
+				A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,10 +197,12 @@
 		58DDC5861C2E4AB5008B6596 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A680C4001C51C4DE000B32E3 /* Enums */,
 				58DDC5871C2E4AEA008B6596 /* Prisoner.swift */,
-				58E5F7991C50444A00ACEC52 /* Disciplines.swift */,
 				58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */,
 				58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */,
+				A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */,
+				A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +210,7 @@
 		58DDC5931C2F12EE008B6596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */,
 				58DDC5891C2F11C7008B6596 /* Genome.framework */,
 			);
 			name = Frameworks;
@@ -225,6 +248,15 @@
 				58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A680C4001C51C4DE000B32E3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				58E5F7991C50444A00ACEC52 /* Disciplines.swift */,
+				A680C3FE1C51C1D2000B32E3 /* Responses.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,13 +362,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */,
-				583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */,
 				58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */,
+				A6F147D61C51968200CAAC9C /* PrisonerSerializationService.swift in Sources */,
 				58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */,
+				A680C3FB1C51BCD6000B32E3 /* DisciplineStatistics.swift in Sources */,
 				58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */,
+				A6F147CA1C518AE300CAAC9C /* HTTPService.swift in Sources */,
+				A6F147D21C51918500CAAC9C /* SeedJailService.swift in Sources */,
+				A6F147D41C5191BE00CAAC9C /* JailServiceProtocol.swift in Sources */,
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
+				A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */,
 				A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
+				A680C3FF1C51C1D2000B32E3 /* Responses.swift in Sources */,
 				58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */,
 				58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */,
 			);

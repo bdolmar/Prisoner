@@ -9,24 +9,50 @@
 import Foundation
 import Genome
 
-struct Prisoner {
-    var username: String = ""
-    var discipline: Discipline = .Unknown
-    var sentence: Int = 0
-    var confessions: Int = 0
-    var silents: Int = 0
-    var averageRuntime: Int = 0
+private enum PrisonerJSON : String {
+    case Username = "username"
+    case Discipline = "discipline"
+    case TotalSentence = "totalSentenceYears"
+    case ConfessionResponses = "confessions"
+    case SilentResponses = "silents"
+    case AverageRuntime = "averageRuntime"
 }
 
-//MARK: - Genome Support
+struct Prisoner {
+    private(set) var username: String = ""
+    private(set) var discipline: Discipline = .Unknown
+    private(set) var totalSentence: Int = 0
+    private(set) var confessionResponses: Int = 0
+    private(set) var silentResponses: Int = 0
+    private(set) var averageRuntime: Int = 0
 
-extension Prisoner : BasicMappable {
-    mutating func sequence(map: Map) throws {
-        try username <~> map["username"]
-        try discipline <~> map["discipline"]
-        try sentence <~> map["sentence"]
-        try confessions ~> map["confessions"]
-        try silents <~> map["silents"]
-        try averageRuntime <~> map["averageRuntime"]
+    init(json: JSON) {
+        self.fromJSON(json)
+    }
+    
+    mutating func fromJSON(json: JSON) -> Void {
+        if let usernameAsStr = json[PrisonerJSON.Username.rawValue] as? String {
+            self.username = usernameAsStr
+        }
+        
+        if let disciplineAsStr = json[PrisonerJSON.Discipline.rawValue] as? String, disciplineAsEnum = Discipline(rawValue: disciplineAsStr) {
+            self.discipline = disciplineAsEnum
+        }
+        
+        if let totalSentenceAsNumber = json[PrisonerJSON.TotalSentence.rawValue] as? Int {
+            self.totalSentence = totalSentenceAsNumber
+        }
+        
+        if let confessionResponsesAsNumber = json[PrisonerJSON.ConfessionResponses.rawValue] as? Int {
+            self.confessionResponses = confessionResponsesAsNumber
+        }
+        
+        if let silentResponsesAsNumber = json[PrisonerJSON.SilentResponses.rawValue] as? Int {
+            self.silentResponses = silentResponsesAsNumber
+        }
+        
+        if let averageRuntimeAsNumber = json[PrisonerJSON.AverageRuntime.rawValue] as? Int {
+            self.averageRuntime = averageRuntimeAsNumber
+        }
     }
 }

@@ -16,6 +16,8 @@ class StatisticsRunner : NSObject {
     private var timer: NSTimer? = nil
     private var isListening: Bool = false
     
+    var delegate: StatisticsConsumer? = nil
+    
     init(jailService: JailServiceProtocol, pipeline: PrisonerSerializationPipeline) {
         self.jailService = jailService
         self.pipeline = pipeline
@@ -44,8 +46,7 @@ extension StatisticsRunner {
     func step() -> Void {
         self.fetchNextStatistics()
             .onSuccess(.Main) { standings -> Void in
-                print("step...")
-                print(standings)
+                self.delegate?.useCompetitionStandings(standings)
         }
     }
     

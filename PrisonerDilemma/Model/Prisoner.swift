@@ -10,23 +10,45 @@ import Foundation
 import Genome
 
 struct Prisoner {
+    
     var username: String = ""
     var discipline: Discipline = .Unknown
     var sentence: Int = 0
-    var confessions: Int = 0
-    var silents: Int = 0
-    var averageRuntime: Int = 0
+    
+    var fullname: String {
+        if Prisoner.lookupTable == nil {
+            Prisoner.loadLookupTable()
+        }
+        
+        if let lookupTable = Prisoner.lookupTable, fullname = lookupTable[self.username]?["fullName"] {
+            return fullname
+        } else {
+            return ""
+        }
+    }
+
+    var firstname: String {
+        if Prisoner.lookupTable == nil {
+            Prisoner.loadLookupTable()
+        }
+        
+        if let lookupTable = Prisoner.lookupTable, fullname = lookupTable[self.username]?["firstName"] {
+            return fullname
+        } else {
+            return ""
+        }
+    }
 }
 
-//MARK: - Genome Support
+//MARK: - Lookup Table Logid
 
-extension Prisoner : BasicMappable {
-    mutating func sequence(map: Map) throws {
-        try username <~> map["username"]
-        try discipline <~> map["discipline"]
-        try sentence <~> map["sentence"]
-        try confessions ~> map["confessions"]
-        try silents <~> map["silents"]
-        try averageRuntime <~> map["averageRuntime"]
+extension Prisoner {
+    private static var lookupTable: [String: [String: String]]?
+
+    private static func loadLookupTable() {
+        if let path = NSBundle.mainBundle().pathForResource("Prisoners", ofType: "plist"),
+               lookupTable = NSDictionary(contentsOfFile: path) as? [String: [String: String]] {
+            Prisoner.lookupTable = lookupTable
+        }
     }
 }

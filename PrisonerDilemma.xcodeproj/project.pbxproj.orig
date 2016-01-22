@@ -7,7 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583C586B1C31A7630064E62A /* Gamemaker.swift */; };
+<<<<<<< HEAD
+		584F37771C51D91500554C10 /* Prisoners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 584F37761C51D91500554C10 /* Prisoners.plist */; };
+		584F37791C51FD1200554C10 /* PrisonerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F37781C51FD1200554C10 /* PrisonerView.swift */; };
+		584F379B1C52059D00554C10 /* aarbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F377B1C52059D00554C10 /* aarbit.png */; };
+		584F379C1C52059D00554C10 /* adetrick.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F377C1C52059D00554C10 /* adetrick.png */; };
+		584F379D1C52059D00554C10 /* bdolmar.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F377D1C52059D00554C10 /* bdolmar.png */; };
+		584F379E1C52059D00554C10 /* cdavis.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F377E1C52059D00554C10 /* cdavis.png */; };
+		584F379F1C52059D00554C10 /* cfein.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F377F1C52059D00554C10 /* cfein.png */; };
+		584F37A01C52059D00554C10 /* dflor.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37801C52059D00554C10 /* dflor.png */; };
+		584F37A11C52059D00554C10 /* dgoetsch.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37811C52059D00554C10 /* dgoetsch.png */; };
+		584F37A21C52059D00554C10 /* dkane.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37821C52059D00554C10 /* dkane.png */; };
+		584F37A31C52059D00554C10 /* epfremme.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37831C52059D00554C10 /* epfremme.png */; };
+		584F37A41C52059D00554C10 /* icoffiel.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37841C52059D00554C10 /* icoffiel.png */; };
+		584F37A51C52059D00554C10 /* jgardner.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37851C52059D00554C10 /* jgardner.png */; };
+		584F37A61C52059D00554C10 /* jhuston.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37861C52059D00554C10 /* jhuston.png */; };
+		584F37A71C52059D00554C10 /* jklun.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37871C52059D00554C10 /* jklun.png */; };
+		584F37A81C52059D00554C10 /* jmullin.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37881C52059D00554C10 /* jmullin.png */; };
+		584F37A91C52059D00554C10 /* johuff.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37891C52059D00554C10 /* johuff.png */; };
+		584F37AA1C52059D00554C10 /* kmuth.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F378A1C52059D00554C10 /* kmuth.png */; };
+		584F37AB1C52059D00554C10 /* kness.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F378B1C52059D00554C10 /* kness.png */; };
+		584F37AC1C52059D00554C10 /* ksykora.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F378C1C52059D00554C10 /* ksykora.png */; };
+		584F37AD1C52059D00554C10 /* kwatson.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F378D1C52059D00554C10 /* kwatson.png */; };
+		584F37AE1C52059D00554C10 /* meastes.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F378E1C52059D00554C10 /* meastes.png */; };
+		584F37AF1C52059D00554C10 /* mloberg.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F378F1C52059D00554C10 /* mloberg.png */; };
+		584F37B01C52059D00554C10 /* nbrunett.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37901C52059D00554C10 /* nbrunett.png */; };
+		584F37B11C52059D00554C10 /* nrussell.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37911C52059D00554C10 /* nrussell.png */; };
+		584F37B21C52059D00554C10 /* pphilipp.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37921C52059D00554C10 /* pphilipp.png */; };
+		584F37B31C52059D00554C10 /* rbanasia.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37931C52059D00554C10 /* rbanasia.png */; };
+		584F37B41C52059D00554C10 /* rdeluca.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37941C52059D00554C10 /* rdeluca.png */; };
+		584F37B51C52059D00554C10 /* revans.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37951C52059D00554C10 /* revans.png */; };
+		584F37B61C52059D00554C10 /* rvanbelk.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37961C52059D00554C10 /* rvanbelk.png */; };
+		584F37B71C52059D00554C10 /* slee.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37971C52059D00554C10 /* slee.png */; };
+		584F37B81C52059D00554C10 /* thoufek.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37981C52059D00554C10 /* thoufek.png */; };
+		584F37B91C52059D00554C10 /* tkanning.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37991C52059D00554C10 /* tkanning.png */; };
+		584F37BA1C52059D00554C10 /* vjones.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F379A1C52059D00554C10 /* vjones.png */; };
+		584F37BE1C52238B00554C10 /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584F37BD1C52238B00554C10 /* LeaderboardCell.xib */; };
+=======
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 		58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */; };
 		58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC5651C2E3B65008B6596 /* Main.storyboard */; };
 		58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */; };
@@ -20,12 +57,21 @@
 		58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7991C50444A00ACEC52 /* Disciplines.swift */; };
 		58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */; };
 		58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */; };
-<<<<<<< HEAD
 		58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */; };
 		58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */; };
-=======
+		A680C3FB1C51BCD6000B32E3 /* DisciplineStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */; };
+		A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */; };
+		A680C3FF1C51C1D2000B32E3 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FE1C51C1D2000B32E3 /* Responses.swift */; };
+		A685BD941C525F12005F0FA6 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A685BD931C525F12005F0FA6 /* Swinject.framework */; };
+		A685BD951C525F12005F0FA6 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A685BD931C525F12005F0FA6 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A685BD981C525F4A005F0FA6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A685BD971C525F4A005F0FA6 /* Configuration.swift */; };
 		A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAA1EE1C5173A300B74D53 /* JailService.swift */; };
->>>>>>> c335f199d6616eb59ea3490a56be7bf772baa448
+		A6F147CA1C518AE300CAAC9C /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147C91C518AE300CAAC9C /* HTTPService.swift */; };
+		A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */; };
+		A6F147D01C518FEC00CAAC9C /* FutureKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6F147D21C51918500CAAC9C /* SeedJailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147D11C51918500CAAC9C /* SeedJailService.swift */; };
+		A6F147D41C5191BE00CAAC9C /* JailServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */; };
+		A6F147D61C51968200CAAC9C /* PrisonerSerializationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +91,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A685BD951C525F12005F0FA6 /* Swinject.framework in Embed Frameworks */,
+				A6F147D01C518FEC00CAAC9C /* FutureKit.framework in Embed Frameworks */,
 				58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -53,7 +101,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		583C586B1C31A7630064E62A /* Gamemaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamemaker.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		584F37761C51D91500554C10 /* Prisoners.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Prisoners.plist; sourceTree = "<group>"; };
+		584F37781C51FD1200554C10 /* PrisonerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerView.swift; sourceTree = "<group>"; };
+		584F377B1C52059D00554C10 /* aarbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aarbit.png; sourceTree = "<group>"; };
+		584F377C1C52059D00554C10 /* adetrick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adetrick.png; sourceTree = "<group>"; };
+		584F377D1C52059D00554C10 /* bdolmar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdolmar.png; sourceTree = "<group>"; };
+		584F377E1C52059D00554C10 /* cdavis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cdavis.png; sourceTree = "<group>"; };
+		584F377F1C52059D00554C10 /* cfein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cfein.png; sourceTree = "<group>"; };
+		584F37801C52059D00554C10 /* dflor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dflor.png; sourceTree = "<group>"; };
+		584F37811C52059D00554C10 /* dgoetsch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dgoetsch.png; sourceTree = "<group>"; };
+		584F37821C52059D00554C10 /* dkane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dkane.png; sourceTree = "<group>"; };
+		584F37831C52059D00554C10 /* epfremme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = epfremme.png; sourceTree = "<group>"; };
+		584F37841C52059D00554C10 /* icoffiel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icoffiel.png; sourceTree = "<group>"; };
+		584F37851C52059D00554C10 /* jgardner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jgardner.png; sourceTree = "<group>"; };
+		584F37861C52059D00554C10 /* jhuston.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jhuston.png; sourceTree = "<group>"; };
+		584F37871C52059D00554C10 /* jklun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jklun.png; sourceTree = "<group>"; };
+		584F37881C52059D00554C10 /* jmullin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jmullin.png; sourceTree = "<group>"; };
+		584F37891C52059D00554C10 /* johuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = johuff.png; sourceTree = "<group>"; };
+		584F378A1C52059D00554C10 /* kmuth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kmuth.png; sourceTree = "<group>"; };
+		584F378B1C52059D00554C10 /* kness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kness.png; sourceTree = "<group>"; };
+		584F378C1C52059D00554C10 /* ksykora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ksykora.png; sourceTree = "<group>"; };
+		584F378D1C52059D00554C10 /* kwatson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kwatson.png; sourceTree = "<group>"; };
+		584F378E1C52059D00554C10 /* meastes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meastes.png; sourceTree = "<group>"; };
+		584F378F1C52059D00554C10 /* mloberg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mloberg.png; sourceTree = "<group>"; };
+		584F37901C52059D00554C10 /* nbrunett.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nbrunett.png; sourceTree = "<group>"; };
+		584F37911C52059D00554C10 /* nrussell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nrussell.png; sourceTree = "<group>"; };
+		584F37921C52059D00554C10 /* pphilipp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pphilipp.png; sourceTree = "<group>"; };
+		584F37931C52059D00554C10 /* rbanasia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rbanasia.png; sourceTree = "<group>"; };
+		584F37941C52059D00554C10 /* rdeluca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rdeluca.png; sourceTree = "<group>"; };
+		584F37951C52059D00554C10 /* revans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = revans.png; sourceTree = "<group>"; };
+		584F37961C52059D00554C10 /* rvanbelk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rvanbelk.png; sourceTree = "<group>"; };
+		584F37971C52059D00554C10 /* slee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slee.png; sourceTree = "<group>"; };
+		584F37981C52059D00554C10 /* thoufek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thoufek.png; sourceTree = "<group>"; };
+		584F37991C52059D00554C10 /* tkanning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tkanning.png; sourceTree = "<group>"; };
+		584F379A1C52059D00554C10 /* vjones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vjones.png; sourceTree = "<group>"; };
+		584F37BD1C52238B00554C10 /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 		58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonerDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DDC5661C2E3B65008B6596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,12 +158,19 @@
 		58E5F7991C50444A00ACEC52 /* Disciplines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplines.swift; sourceTree = "<group>"; };
 		58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionStandings.swift; sourceTree = "<group>"; };
 		58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionRound.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtensions.swift; sourceTree = "<group>"; };
-=======
+		A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisciplineStatistics.swift; sourceTree = "<group>"; };
+		A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerEntry.swift; sourceTree = "<group>"; };
+		A680C3FE1C51C1D2000B32E3 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		A685BD931C525F12005F0FA6 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
+		A685BD971C525F4A005F0FA6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A6AAA1EE1C5173A300B74D53 /* JailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailService.swift; sourceTree = "<group>"; };
->>>>>>> c335f199d6616eb59ea3490a56be7bf772baa448
+		A6F147C91C518AE300CAAC9C /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FutureKit.framework; path = Carthage/Build/Mac/FutureKit.framework; sourceTree = "<group>"; };
+		A6F147D11C51918500CAAC9C /* SeedJailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedJailService.swift; sourceTree = "<group>"; };
+		A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailServiceProtocol.swift; sourceTree = "<group>"; };
+		A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerSerializationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A685BD941C525F12005F0FA6 /* Swinject.framework in Frameworks */,
+				A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */,
 				58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +194,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		584F377A1C52059D00554C10 /* NerdImages */ = {
+			isa = PBXGroup;
+			children = (
+				584F377B1C52059D00554C10 /* aarbit.png */,
+				584F377C1C52059D00554C10 /* adetrick.png */,
+				584F377D1C52059D00554C10 /* bdolmar.png */,
+				584F377E1C52059D00554C10 /* cdavis.png */,
+				584F377F1C52059D00554C10 /* cfein.png */,
+				584F37801C52059D00554C10 /* dflor.png */,
+				584F37811C52059D00554C10 /* dgoetsch.png */,
+				584F37821C52059D00554C10 /* dkane.png */,
+				584F37831C52059D00554C10 /* epfremme.png */,
+				584F37841C52059D00554C10 /* icoffiel.png */,
+				584F37851C52059D00554C10 /* jgardner.png */,
+				584F37861C52059D00554C10 /* jhuston.png */,
+				584F37871C52059D00554C10 /* jklun.png */,
+				584F37881C52059D00554C10 /* jmullin.png */,
+				584F37891C52059D00554C10 /* johuff.png */,
+				584F378A1C52059D00554C10 /* kmuth.png */,
+				584F378B1C52059D00554C10 /* kness.png */,
+				584F378C1C52059D00554C10 /* ksykora.png */,
+				584F378D1C52059D00554C10 /* kwatson.png */,
+				584F378E1C52059D00554C10 /* meastes.png */,
+				584F378F1C52059D00554C10 /* mloberg.png */,
+				584F37901C52059D00554C10 /* nbrunett.png */,
+				584F37911C52059D00554C10 /* nrussell.png */,
+				584F37921C52059D00554C10 /* pphilipp.png */,
+				584F37931C52059D00554C10 /* rbanasia.png */,
+				584F37941C52059D00554C10 /* rdeluca.png */,
+				584F37951C52059D00554C10 /* revans.png */,
+				584F37961C52059D00554C10 /* rvanbelk.png */,
+				584F37971C52059D00554C10 /* slee.png */,
+				584F37981C52059D00554C10 /* thoufek.png */,
+				584F37991C52059D00554C10 /* tkanning.png */,
+				584F379A1C52059D00554C10 /* vjones.png */,
+			);
+			path = NerdImages;
+			sourceTree = "<group>";
+		};
 		58DDC5531C2E3B65008B6596 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +260,7 @@
 				58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */,
 				58DDC5681C2E3B66008B6596 /* Info.plist */,
 				58DDC5651C2E3B65008B6596 /* Main.storyboard */,
+				A685BD961C525F39005F0FA6 /* Configuration */,
 				58E5F7A21C517EB800ACEC52 /* Extensions */,
 				58DDC5861C2E4AB5008B6596 /* Model */,
 				58DDC57C1C2E4884008B6596 /* Resources */,
@@ -149,6 +283,7 @@
 		58DDC57C1C2E4884008B6596 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				584F377A1C52059D00554C10 /* NerdImages */,
 				58DDC57D1C2E4884008B6596 /* Assets.xcassets */,
 				58DDC57E1C2E4884008B6596 /* Data */,
 			);
@@ -159,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				58DDC57F1C2E4884008B6596 /* prisoners.json */,
+				584F37761C51D91500554C10 /* Prisoners.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -166,8 +302,14 @@
 		58DDC5801C2E4884008B6596 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				583C586B1C31A7630064E62A /* Gamemaker.swift */,
+<<<<<<< HEAD
+=======
+				A6F147C91C518AE300CAAC9C /* HTTPService.swift */,
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 				A6AAA1EE1C5173A300B74D53 /* JailService.swift */,
+				A6F147D11C51918500CAAC9C /* SeedJailService.swift */,
+				A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */,
+				A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,10 +325,12 @@
 		58DDC5861C2E4AB5008B6596 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A680C4001C51C4DE000B32E3 /* Enums */,
 				58DDC5871C2E4AEA008B6596 /* Prisoner.swift */,
-				58E5F7991C50444A00ACEC52 /* Disciplines.swift */,
 				58E5F79B1C5048CF00ACEC52 /* CompetitionStandings.swift */,
 				58E5F79D1C504BC700ACEC52 /* CompetitionRound.swift */,
+				A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */,
+				A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +338,8 @@
 		58DDC5931C2F12EE008B6596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A685BD931C525F12005F0FA6 /* Swinject.framework */,
+				A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */,
 				58DDC5891C2F11C7008B6596 /* Genome.framework */,
 			);
 			name = Frameworks;
@@ -221,6 +367,8 @@
 			isa = PBXGroup;
 			children = (
 				58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */,
+				584F37781C51FD1200554C10 /* PrisonerView.swift */,
+				584F37BD1C52238B00554C10 /* LeaderboardCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +379,23 @@
 				58E5F7A31C517F1300ACEC52 /* NSBezierPathExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A680C4001C51C4DE000B32E3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				58E5F7991C50444A00ACEC52 /* Disciplines.swift */,
+				A680C3FE1C51C1D2000B32E3 /* Responses.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		A685BD961C525F39005F0FA6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A685BD971C525F4A005F0FA6 /* Configuration.swift */,
+			);
+			name = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,9 +480,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584F37B81C52059D00554C10 /* thoufek.png in Resources */,
+				584F379F1C52059D00554C10 /* cfein.png in Resources */,
+				584F37B21C52059D00554C10 /* pphilipp.png in Resources */,
+				584F37AD1C52059D00554C10 /* kwatson.png in Resources */,
+				584F37AF1C52059D00554C10 /* mloberg.png in Resources */,
+				584F37B31C52059D00554C10 /* rbanasia.png in Resources */,
+				584F37A71C52059D00554C10 /* jklun.png in Resources */,
+				584F37B11C52059D00554C10 /* nrussell.png in Resources */,
+				584F379D1C52059D00554C10 /* bdolmar.png in Resources */,
 				58DDC5811C2E4884008B6596 /* Assets.xcassets in Resources */,
 				58DDC5821C2E4884008B6596 /* prisoners.json in Resources */,
+				584F37B01C52059D00554C10 /* nbrunett.png in Resources */,
+				584F37A41C52059D00554C10 /* icoffiel.png in Resources */,
+				584F37771C51D91500554C10 /* Prisoners.plist in Resources */,
+				584F37AE1C52059D00554C10 /* meastes.png in Resources */,
+				584F37B71C52059D00554C10 /* slee.png in Resources */,
+				584F37A51C52059D00554C10 /* jgardner.png in Resources */,
 				58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */,
+				584F37A11C52059D00554C10 /* dgoetsch.png in Resources */,
+				584F37A61C52059D00554C10 /* jhuston.png in Resources */,
+				584F37A21C52059D00554C10 /* dkane.png in Resources */,
+				584F37A31C52059D00554C10 /* epfremme.png in Resources */,
+				584F37B61C52059D00554C10 /* rvanbelk.png in Resources */,
+				584F37AB1C52059D00554C10 /* kness.png in Resources */,
+				584F37B91C52059D00554C10 /* tkanning.png in Resources */,
+				584F37A81C52059D00554C10 /* jmullin.png in Resources */,
+				584F379C1C52059D00554C10 /* adetrick.png in Resources */,
+				584F37BE1C52238B00554C10 /* LeaderboardCell.xib in Resources */,
+				584F37AC1C52059D00554C10 /* ksykora.png in Resources */,
+				584F379B1C52059D00554C10 /* aarbit.png in Resources */,
+				584F37B51C52059D00554C10 /* revans.png in Resources */,
+				584F379E1C52059D00554C10 /* cdavis.png in Resources */,
+				584F37AA1C52059D00554C10 /* kmuth.png in Resources */,
+				584F37A91C52059D00554C10 /* johuff.png in Resources */,
+				584F37B41C52059D00554C10 /* rdeluca.png in Resources */,
+				584F37BA1C52059D00554C10 /* vjones.png in Resources */,
+				584F37A01C52059D00554C10 /* dflor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +535,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */,
-				583C586C1C31A7630064E62A /* Gamemaker.swift in Sources */,
 				58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */,
+				A6F147D61C51968200CAAC9C /* PrisonerSerializationService.swift in Sources */,
 				58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */,
+				A680C3FB1C51BCD6000B32E3 /* DisciplineStatistics.swift in Sources */,
 				58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */,
+				A6F147CA1C518AE300CAAC9C /* HTTPService.swift in Sources */,
+				A6F147D21C51918500CAAC9C /* SeedJailService.swift in Sources */,
+				A6F147D41C5191BE00CAAC9C /* JailServiceProtocol.swift in Sources */,
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
+				A685BD981C525F4A005F0FA6 /* Configuration.swift in Sources */,
+				A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */,
 				A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
+				A680C3FF1C51C1D2000B32E3 /* Responses.swift in Sources */,
 				58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */,
+				584F37791C51FD1200554C10 /* PrisonerView.swift in Sources */,
 				58E5F7A11C51733800ACEC52 /* ScoreboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +675,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = PrisonerDilemma/Info.plist;
+<<<<<<< HEAD
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(CONFIGURATION_BUILD_DIR) @loader_path/../Frameworks";
+=======
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -484,7 +696,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = PrisonerDilemma/Info.plist;
+<<<<<<< HEAD
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(CONFIGURATION_BUILD_DIR) @loader_path/../Frameworks";
+=======
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

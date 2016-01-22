@@ -32,6 +32,14 @@ struct CompetitionRound {
         self.player1 = player1
         self.player2 = player2
         
+        if let player1JSON = json["entrant1"] as? Dictionary<String, AnyObject>, sentenceAsNumber = player1JSON["sentenceYears"] as? Int {
+            self.player1.sentence = sentenceAsNumber
+        }
+        
+        if let player2JSON = json["entrant2"] as? Dictionary<String, AnyObject>, sentenceAsNumber = player2JSON["sentenceYears"] as? Int {
+            self.player2.sentence = sentenceAsNumber
+        }
+        
         if let roundNumberAsNumber = json["interrogationIndex"] as? Int {
             self.roundNumber = roundNumberAsNumber
         }

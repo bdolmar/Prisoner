@@ -66,5 +66,6 @@ extension MainViewController: NSTableViewDelegate {
 extension MainViewController: StatisticsConsumer {
     func useCompetitionStandings(standings: CompetitionStandings) {
         // TODO: Add your usage logic here, bdolmar
+        self.scoreboardView.updateWithRound(standings.currentRound)
     }
 }

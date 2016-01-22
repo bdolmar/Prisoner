@@ -10,5 +10,5 @@ import Foundation
 import FutureKit
 
 protocol JailServiceProtocol {
-    func fetchScores() -> Void
+    func fetchScores() -> Future<NSData>
 }

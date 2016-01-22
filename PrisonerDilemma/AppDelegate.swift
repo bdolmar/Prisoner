@@ -21,10 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print("arenaPath: \(arenaPath)")
         
         let configuration = Configuration()
-        let jailService = configuration.container.resolve(JailServiceProtocol.self, name: "seeded")!
-//        let httpService = HTTPService()
-//        let jailService = JailService(httpService: httpService)
-        jailService.fetchScores()
+        let statisticsRunner = configuration.container.resolve(StatisticsRunner.self)!
+        statisticsRunner.startListening()
 //        print("environment: \(NSProcessInfo.processInfo().environment)")
     }
 

@@ -43,8 +43,13 @@ extension MainViewController: NSTableViewDataSource {
 
 extension MainViewController: NSTableViewDelegate {
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let result = tableView.makeViewWithIdentifier("LeaderboardCell", owner: self);
+        guard let result = tableView.makeViewWithIdentifier("LeaderboardCell", owner: self) as? LeaderboardCell else {
+            return nil
+        }
 
+        let prisoner = Prisoner(username: "jklun", discipline: .JVM, sentence: 14)
+        result.updateWithPrisoner(prisoner)
+        
         return result
     }
     

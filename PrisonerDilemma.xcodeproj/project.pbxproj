@@ -42,6 +42,7 @@
 		584F37B91C52059D00554C10 /* tkanning.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37991C52059D00554C10 /* tkanning.png */; };
 		584F37BA1C52059D00554C10 /* vjones.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F379A1C52059D00554C10 /* vjones.png */; };
 		584F37BE1C52238B00554C10 /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584F37BD1C52238B00554C10 /* LeaderboardCell.xib */; };
+		584F37C01C52821800554C10 /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F37BF1C52821800554C10 /* LeaderboardCell.swift */; };
 		58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */; };
 		58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC5651C2E3B65008B6596 /* Main.storyboard */; };
 		58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */; };
@@ -133,6 +134,7 @@
 		584F37991C52059D00554C10 /* tkanning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tkanning.png; sourceTree = "<group>"; };
 		584F379A1C52059D00554C10 /* vjones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vjones.png; sourceTree = "<group>"; };
 		584F37BD1C52238B00554C10 /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+		584F37BF1C52821800554C10 /* LeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
 		58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonerDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DDC5661C2E3B65008B6596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				58E5F7A01C51733800ACEC52 /* ScoreboardView.swift */,
 				584F37781C51FD1200554C10 /* PrisonerView.swift */,
 				584F37BD1C52238B00554C10 /* LeaderboardCell.xib */,
+				584F37BF1C52821800554C10 /* LeaderboardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				A685BD981C525F4A005F0FA6 /* Configuration.swift in Sources */,
 				A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */,
 				A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */,
+				584F37C01C52821800554C10 /* LeaderboardCell.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,
 				A680C3FF1C51C1D2000B32E3 /* Responses.swift in Sources */,
 				58E5F79A1C50444A00ACEC52 /* Disciplines.swift in Sources */,

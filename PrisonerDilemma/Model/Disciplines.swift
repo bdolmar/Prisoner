@@ -39,4 +39,29 @@ enum Discipline: String {
         
         return result
     }
+    
+    func description() -> String {
+        var result: String
+        
+        switch (self) {
+        case .Mobile:
+            result = "Mobile"
+        case .DotNet:
+            result = ".NET"
+        case .PHP:
+            result = "PHP"
+        case .Ruby:
+            result = "Ruby"
+        case .JVM:
+            result = "JVM"
+        case .ClientSide:
+            result = "Client Side"
+        default:
+            result = ""
+        }
+        
+        return result
+
+    }
+    
 }

@@ -12,19 +12,46 @@ import Genome
 private enum PrisonerJSON : String {
     case Username = "username"
     case Discipline = "discipline"
-    case TotalSentence = "totalSentenceYears"
+    case Sentence = "sentenceYears"
     case ConfessionResponses = "confessions"
     case SilentResponses = "silents"
     case AverageRuntime = "averageRuntime"
 }
 
 struct Prisoner {
-    private(set) var username: String = ""
-    private(set) var discipline: Discipline = .Unknown
-    private(set) var totalSentence: Int = 0
-    private(set) var confessionResponses: Int = 0
-    private(set) var silentResponses: Int = 0
-    private(set) var averageRuntime: Int = 0
+    var username: String = ""
+    var discipline: Discipline = .Unknown
+    var sentence: Int = 0
+    
+    var fullname: String {
+        if Prisoner.lookupTable == nil {
+            Prisoner.loadLookupTable()
+        }
+        
+        if let lookupTable = Prisoner.lookupTable, fullname = lookupTable[self.username]?["fullName"] {
+            return fullname
+        } else {
+            return ""
+        }
+    }
+
+    var firstname: String {
+        if Prisoner.lookupTable == nil {
+            Prisoner.loadLookupTable()
+        }
+        
+        if let lookupTable = Prisoner.lookupTable, fullname = lookupTable[self.username]?["firstName"] {
+            return fullname
+        } else {
+            return ""
+        }
+    }
+
+    init(username: String, discipline: Discipline, sentence: Int) {
+        self.username = username
+        self.discipline = discipline
+        self.sentence = sentence
+    }
 
     init(json: JSON) {
         self.fromJSON(json)
@@ -39,20 +66,21 @@ struct Prisoner {
             self.discipline = disciplineAsEnum
         }
         
-        if let totalSentenceAsNumber = json[PrisonerJSON.TotalSentence.rawValue] as? Int {
-            self.totalSentence = totalSentenceAsNumber
-        }
-        
-        if let confessionResponsesAsNumber = json[PrisonerJSON.ConfessionResponses.rawValue] as? Int {
-            self.confessionResponses = confessionResponsesAsNumber
-        }
-        
-        if let silentResponsesAsNumber = json[PrisonerJSON.SilentResponses.rawValue] as? Int {
-            self.silentResponses = silentResponsesAsNumber
-        }
-        
-        if let averageRuntimeAsNumber = json[PrisonerJSON.AverageRuntime.rawValue] as? Int {
-            self.averageRuntime = averageRuntimeAsNumber
+        if let totalSentenceAsNumber = json[PrisonerJSON.Sentence.rawValue] as? Int {
+            self.sentence = totalSentenceAsNumber
+        }        
+    }
+}
+
+//MARK: - Lookup Table Logid
+
+extension Prisoner {
+    private static var lookupTable: [String: [String: String]]?
+    
+    private static func loadLookupTable() {
+        if let path = NSBundle.mainBundle().pathForResource("Prisoners", ofType: "plist"),
+            lookupTable = NSDictionary(contentsOfFile: path) as? [String: [String: String]] {
+                Prisoner.lookupTable = lookupTable
         }
     }
 }

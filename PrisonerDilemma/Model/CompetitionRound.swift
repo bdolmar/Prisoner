@@ -9,12 +9,18 @@
 import Foundation
 
 struct CompetitionRound {
-    var player1: PrisonerEntry
-    var player2: PrisonerEntry
+    var player1: Prisoner
+    var player2: Prisoner
     var roundNumber: Int = 0
     var startDate: NSDate = NSDate()
+
+    init(player1: Prisoner, player2: Prisoner, roundNumber: Int) {
+        self.player1 = player1
+        self.player2 = player2
+        self.roundNumber = roundNumber
+    }
     
-    init(player1: PrisonerEntry, player2: PrisonerEntry, json: Dictionary<String, AnyObject>) {
+    init(player1: Prisoner, player2: Prisoner, json: Dictionary<String, AnyObject>) {
         self.player1 = player1
         self.player2 = player2
         // Had to define these for the compiler to catch that hydrate updates it
@@ -22,7 +28,7 @@ struct CompetitionRound {
         self.hydrateWithJSON(player1, player2: player2, json: json)
     }
     
-    mutating func hydrateWithJSON(player1: PrisonerEntry, player2: PrisonerEntry, json: Dictionary<String, AnyObject>) -> Void {
+    mutating func hydrateWithJSON(player1: Prisoner, player2: Prisoner, json: Dictionary<String, AnyObject>) -> Void {
         self.player1 = player1
         self.player2 = player2
         

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1eg-1g-UqF">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="qgJ-gg-U2H" customClass="PrisonerView" customModule="PrisonerDilemma" customModuleProvider="target">
+                    <rect key="frame" x="43" y="16" width="86" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qgJ-gg-U2H" secondAttribute="height" multiplier="1:1" id="Kf4-6Y-qTu"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="omw-iS-Bpj">
+                    <rect key="frame" x="141" y="58" width="105" height="38"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Jay Peyer" id="k4w-lX-pRy">
+                        <font key="font" size="24" name="DINOT-Light"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-Oj-YLA">
+                    <rect key="frame" x="141" y="25" width="74" height="38"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mobile" id="7Ya-wE-mQ5">
+                        <font key="font" size="24" name="DINOT-Light"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-tO-ekZ">
+                    <rect key="frame" x="409" y="28" width="43" height="93"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="4" id="ngg-bY-97K">
+                        <font key="font" size="72" name="DINOT-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7U6-jz-bTY">
+                    <rect key="frame" x="367" y="10" width="85" height="42"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="YEARS" id="D6g-P6-cGn">
+                        <font key="font" size="27" name="DINOT-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="omw-iS-Bpj" firstAttribute="leading" secondItem="qgJ-gg-U2H" secondAttribute="trailing" constant="14" id="4dx-4p-4za"/>
+                <constraint firstAttribute="trailing" secondItem="IJU-tO-ekZ" secondAttribute="trailing" constant="30" id="MMq-0V-RFr"/>
+                <constraint firstAttribute="trailing" secondItem="7U6-jz-bTY" secondAttribute="trailing" constant="30" id="QyK-JQ-K3Z"/>
+                <constraint firstItem="uZY-Oj-YLA" firstAttribute="top" secondItem="omw-iS-Bpj" secondAttribute="bottom" constant="-5" id="Tcs-g7-tLF"/>
+                <constraint firstItem="qgJ-gg-U2H" firstAttribute="centerY" secondItem="1eg-1g-UqF" secondAttribute="centerY" id="XA0-Tb-yXY"/>
+                <constraint firstAttribute="bottom" secondItem="qgJ-gg-U2H" secondAttribute="bottom" constant="16" id="glu-Do-FXc"/>
+                <constraint firstItem="IJU-tO-ekZ" firstAttribute="top" secondItem="qgJ-gg-U2H" secondAttribute="top" constant="-19" id="h36-bA-ut1"/>
+                <constraint firstItem="7U6-jz-bTY" firstAttribute="top" secondItem="IJU-tO-ekZ" secondAttribute="bottom" constant="-24" id="kbf-DG-Xgf"/>
+                <constraint firstItem="uZY-Oj-YLA" firstAttribute="leading" secondItem="omw-iS-Bpj" secondAttribute="leading" id="m6F-Kp-rb6"/>
+                <constraint firstItem="omw-iS-Bpj" firstAttribute="centerY" secondItem="qgJ-gg-U2H" secondAttribute="centerY" constant="-18" id="qzC-e7-nGK"/>
+                <constraint firstItem="qgJ-gg-U2H" firstAttribute="top" secondItem="1eg-1g-UqF" secondAttribute="top" constant="17" id="s5t-Un-zop"/>
+                <constraint firstItem="qgJ-gg-U2H" firstAttribute="leading" secondItem="1eg-1g-UqF" secondAttribute="leading" constant="43" id="upD-52-blw"/>
+            </constraints>
+            <point key="canvasLocation" x="172" y="218.5"/>
+        </customView>
+    </objects>
+</document>

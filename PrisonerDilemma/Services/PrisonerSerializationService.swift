@@ -51,10 +51,8 @@ extension PrisonerSerializationPipeline {
             return prisoner.username == player2Username
         }.first
         
-        let prisonerEntry1 = PrisonerEntry(entrant: prisoner1!, json: player1)
-        let prisonerEntry2 = PrisonerEntry(entrant: prisoner2!, json: player2)
         
-        return CompetitionRound(player1: prisonerEntry1, player2: prisonerEntry2, json: round)
+        return CompetitionRound(player1: prisoner1!, player2: prisoner2!, json: round)
     }
     
     func serialize(data: NSData) throws -> Dictionary<String, AnyObject> {

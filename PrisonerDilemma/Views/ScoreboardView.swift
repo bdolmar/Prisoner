@@ -13,6 +13,12 @@ class ScoreboardView: NSView {
     let player1Background: CAShapeLayer = CAShapeLayer()
     let player2Background: CAShapeLayer = CAShapeLayer()
     
+    @IBOutlet var player1TermTextField: NSTextField!
+    @IBOutlet var player2TermTextField: NSTextField!
+    @IBOutlet var player1PrisonerView: PrisonerView!
+    @IBOutlet var player2PrisonerView: PrisonerView!
+    @IBOutlet var roundTextField: NSTextField!
+    
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         commonSetup()
@@ -37,26 +43,30 @@ class ScoreboardView: NSView {
         self.layer?.addSublayer(self.player2Background)
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override func layout() {
         super.layout()
         let width: CGFloat = self.bounds.size.width
         let scale: CGFloat = 640/480
-        let oval = NSBezierPath(ovalInRect: NSRect(x: 0, y: 0, width: width*scale, height: width*scale))
+        let scaledSide: CGFloat = width * scale
+        let centerX: CGFloat = (width - scaledSide) * 0.5
+        let player1Y: CGFloat = width - (1 - 0.784375) * scaledSide
+        let player2Y: CGFloat = scaledSide * -0.784375
+        let oval1 = NSBezierPath(ovalInRect: NSRect(x: centerX, y: player1Y, width: scaledSide, height: scaledSide))
+        let oval2 = NSBezierPath(ovalInRect: NSRect(x: centerX, y: player2Y, width: scaledSide, height: scaledSide))
         
-        self.player1Background.path = oval.CGPath(forceClose: false)
-        self.player2Background.path = oval.CGPath(forceClose: false)
-
-        
+        self.player1Background.path = oval1.CGPath(forceClose: false)
+        self.player2Background.path = oval2.CGPath(forceClose: false)
     }
     
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    func updateWithRound(round: CompetitionRound) {
+        self.player1TermTextField.stringValue = String(round.player1.sentence)
+        self.player1PrisonerView.updateView(round.player1)
+        self.player1Background.fillColor = round.player1.discipline.associatedColor().CGColor
 
-        // Drawing code here.
+        self.player2TermTextField.stringValue = String(round.player2.sentence)
+        self.player2PrisonerView.updateView(round.player2)
+        self.player2Background.fillColor = round.player2.discipline.associatedColor().CGColor
+        
+        self.roundTextField.stringValue = "Round \(round.roundNumber)"
     }
-    
 }

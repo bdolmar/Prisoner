@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		584F37771C51D91500554C10 /* Prisoners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 584F37761C51D91500554C10 /* Prisoners.plist */; };
 		584F37791C51FD1200554C10 /* PrisonerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F37781C51FD1200554C10 /* PrisonerView.swift */; };
 		584F379B1C52059D00554C10 /* aarbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F377B1C52059D00554C10 /* aarbit.png */; };
@@ -42,6 +43,8 @@
 		584F37B91C52059D00554C10 /* tkanning.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F37991C52059D00554C10 /* tkanning.png */; };
 		584F37BA1C52059D00554C10 /* vjones.png in Resources */ = {isa = PBXBuildFile; fileRef = 584F379A1C52059D00554C10 /* vjones.png */; };
 		584F37BE1C52238B00554C10 /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584F37BD1C52238B00554C10 /* LeaderboardCell.xib */; };
+=======
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 		58DDC5601C2E3B65008B6596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */; };
 		58DDC5671C2E3B66008B6596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DDC5651C2E3B65008B6596 /* Main.storyboard */; };
 		58DDC5721C2E3B66008B6596 /* PrisonerDilemmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DDC5711C2E3B66008B6596 /* PrisonerDilemmaTests.swift */; };
@@ -62,7 +65,6 @@
 		A685BD941C525F12005F0FA6 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A685BD931C525F12005F0FA6 /* Swinject.framework */; };
 		A685BD951C525F12005F0FA6 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A685BD931C525F12005F0FA6 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A685BD981C525F4A005F0FA6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A685BD971C525F4A005F0FA6 /* Configuration.swift */; };
-		A685BD9A1C5271B9005F0FA6 /* StatisticsRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A685BD991C5271B9005F0FA6 /* StatisticsRunner.swift */; };
 		A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAA1EE1C5173A300B74D53 /* JailService.swift */; };
 		A6F147CA1C518AE300CAAC9C /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147C91C518AE300CAAC9C /* HTTPService.swift */; };
 		A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */; };
@@ -99,6 +101,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		584F37761C51D91500554C10 /* Prisoners.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Prisoners.plist; sourceTree = "<group>"; };
 		584F37781C51FD1200554C10 /* PrisonerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerView.swift; sourceTree = "<group>"; };
 		584F377B1C52059D00554C10 /* aarbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aarbit.png; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 		584F37991C52059D00554C10 /* tkanning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tkanning.png; sourceTree = "<group>"; };
 		584F379A1C52059D00554C10 /* vjones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vjones.png; sourceTree = "<group>"; };
 		584F37BD1C52238B00554C10 /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 		58DDC55C1C2E3B65008B6596 /* PrisonerDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonerDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DDC5661C2E3B65008B6596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,7 +165,6 @@
 		A680C3FE1C51C1D2000B32E3 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		A685BD931C525F12005F0FA6 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
 		A685BD971C525F4A005F0FA6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		A685BD991C5271B9005F0FA6 /* StatisticsRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsRunner.swift; sourceTree = "<group>"; };
 		A6AAA1EE1C5173A300B74D53 /* JailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailService.swift; sourceTree = "<group>"; };
 		A6F147C91C518AE300CAAC9C /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FutureKit.framework; path = Carthage/Build/Mac/FutureKit.framework; sourceTree = "<group>"; };
@@ -298,12 +302,14 @@
 		58DDC5801C2E4884008B6596 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
 				A6F147C91C518AE300CAAC9C /* HTTPService.swift */,
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 				A6AAA1EE1C5173A300B74D53 /* JailService.swift */,
 				A6F147D11C51918500CAAC9C /* SeedJailService.swift */,
 				A6F147D31C5191BE00CAAC9C /* JailServiceProtocol.swift */,
 				A6F147D51C51968200CAAC9C /* PrisonerSerializationService.swift */,
-				A685BD991C5271B9005F0FA6 /* StatisticsRunner.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -530,7 +536,6 @@
 			files = (
 				58E5F7A41C517F1300ACEC52 /* NSBezierPathExtensions.swift in Sources */,
 				58E5F79E1C504BC700ACEC52 /* CompetitionRound.swift in Sources */,
-				A685BD9A1C5271B9005F0FA6 /* StatisticsRunner.swift in Sources */,
 				A6F147D61C51968200CAAC9C /* PrisonerSerializationService.swift in Sources */,
 				58E5F79C1C5048CF00ACEC52 /* CompetitionStandings.swift in Sources */,
 				A680C3FB1C51BCD6000B32E3 /* DisciplineStatistics.swift in Sources */,
@@ -670,8 +675,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = PrisonerDilemma/Info.plist;
+<<<<<<< HEAD
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(CONFIGURATION_BUILD_DIR) @loader_path/../Frameworks";
+=======
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -687,8 +696,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = PrisonerDilemma/Info.plist;
+<<<<<<< HEAD
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(CONFIGURATION_BUILD_DIR) @loader_path/../Frameworks";
+=======
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+>>>>>>> ba32e76dc41cdd8cb4b7d4a5cc69dec8ed931423
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.PrisonerDilemma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

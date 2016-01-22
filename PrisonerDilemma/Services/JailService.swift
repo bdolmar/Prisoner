@@ -11,17 +11,18 @@ import Genome
 import FutureKit
 
 class JailService {
-    private let API_URL: NSURL = NSURL(scheme: "http", host: "10.10.11.195:9000", path: "/")!
-    private var httpService: HTTPService
+    private let apiURL: NSURL
+    private let httpService: HTTPService
     
-    init(httpService: HTTPService) {
+    init(httpService: HTTPService, apiURL: NSURL) {
         self.httpService = httpService
+        self.apiURL = apiURL
     }
 }
 
 extension JailService : JailServiceProtocol {
     private func buildAPIUrl(part: String) -> NSURL? {
-        return NSURL(string: part, relativeToURL: self.API_URL)
+        return NSURL(string: part, relativeToURL: self.apiURL)
     }
     
     func fetchScores() -> Void {

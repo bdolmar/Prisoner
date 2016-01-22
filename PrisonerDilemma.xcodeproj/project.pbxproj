@@ -24,6 +24,9 @@
 		A680C3FB1C51BCD6000B32E3 /* DisciplineStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */; };
 		A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */; };
 		A680C3FF1C51C1D2000B32E3 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680C3FE1C51C1D2000B32E3 /* Responses.swift */; };
+		A685BD941C525F12005F0FA6 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A685BD931C525F12005F0FA6 /* Swinject.framework */; };
+		A685BD951C525F12005F0FA6 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A685BD931C525F12005F0FA6 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A685BD981C525F4A005F0FA6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A685BD971C525F4A005F0FA6 /* Configuration.swift */; };
 		A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAA1EE1C5173A300B74D53 /* JailService.swift */; };
 		A6F147CA1C518AE300CAAC9C /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F147C91C518AE300CAAC9C /* HTTPService.swift */; };
 		A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */; };
@@ -50,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A685BD951C525F12005F0FA6 /* Swinject.framework in Embed Frameworks */,
 				A6F147D01C518FEC00CAAC9C /* FutureKit.framework in Embed Frameworks */,
 				58DDC58D1C2F11C7008B6596 /* Genome.framework in Embed Frameworks */,
 			);
@@ -83,6 +87,8 @@
 		A680C3FA1C51BCD6000B32E3 /* DisciplineStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisciplineStatistics.swift; sourceTree = "<group>"; };
 		A680C3FC1C51C198000B32E3 /* PrisonerEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrisonerEntry.swift; sourceTree = "<group>"; };
 		A680C3FE1C51C1D2000B32E3 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		A685BD931C525F12005F0FA6 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
+		A685BD971C525F4A005F0FA6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A6AAA1EE1C5173A300B74D53 /* JailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailService.swift; sourceTree = "<group>"; };
 		A6F147C91C518AE300CAAC9C /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FutureKit.framework; path = Carthage/Build/Mac/FutureKit.framework; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A685BD941C525F12005F0FA6 /* Swinject.framework in Frameworks */,
 				A6F147CF1C518FEC00CAAC9C /* FutureKit.framework in Frameworks */,
 				58DDC58C1C2F11C7008B6596 /* Genome.framework in Frameworks */,
 			);
@@ -138,6 +145,7 @@
 				58DDC55F1C2E3B65008B6596 /* AppDelegate.swift */,
 				58DDC5681C2E3B66008B6596 /* Info.plist */,
 				58DDC5651C2E3B65008B6596 /* Main.storyboard */,
+				A685BD961C525F39005F0FA6 /* Configuration */,
 				58E5F7A21C517EB800ACEC52 /* Extensions */,
 				58DDC5861C2E4AB5008B6596 /* Model */,
 				58DDC57C1C2E4884008B6596 /* Resources */,
@@ -210,6 +218,7 @@
 		58DDC5931C2F12EE008B6596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A685BD931C525F12005F0FA6 /* Swinject.framework */,
 				A6F147CE1C518FEC00CAAC9C /* FutureKit.framework */,
 				58DDC5891C2F11C7008B6596 /* Genome.framework */,
 			);
@@ -257,6 +266,14 @@
 				A680C3FE1C51C1D2000B32E3 /* Responses.swift */,
 			);
 			name = Enums;
+			sourceTree = "<group>";
+		};
+		A685BD961C525F39005F0FA6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A685BD971C525F4A005F0FA6 /* Configuration.swift */,
+			);
+			name = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +388,7 @@
 				A6F147D21C51918500CAAC9C /* SeedJailService.swift in Sources */,
 				A6F147D41C5191BE00CAAC9C /* JailServiceProtocol.swift in Sources */,
 				58DDC5881C2E4AEA008B6596 /* Prisoner.swift in Sources */,
+				A685BD981C525F4A005F0FA6 /* Configuration.swift in Sources */,
 				A680C3FD1C51C198000B32E3 /* PrisonerEntry.swift in Sources */,
 				A6AAA1EF1C5173A300B74D53 /* JailService.swift in Sources */,
 				58DDC5851C2E489F008B6596 /* MainViewController.swift in Sources */,

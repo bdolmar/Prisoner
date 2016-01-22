@@ -1,3 +1,4 @@
 github "FutureKit/FutureKit" "1.2.3"
 github "LoganWright/Genome" "1.0.8"
+github "Swinject/Swinject" "1.0.0"
 github "realm/realm-cocoa" "v0.97.0"

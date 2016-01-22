@@ -10,7 +10,11 @@ import Foundation
 import FutureKit
 
 class HTTPService {
-    let session: NSURLSession = NSURLSession.sharedSession()
+    let session: NSURLSession
+    
+    init(session: NSURLSession) {
+        self.session = session
+    }
 }
 
 extension HTTPService {

@@ -10,7 +10,11 @@ import Foundation
 import FutureKit
 
 class SeedJailService {
-    let bundle: NSBundle = NSBundle.mainBundle()
+    let bundle: NSBundle
+    
+    init(bundle: NSBundle) {
+        self.bundle = bundle
+    }
 }
 
 extension SeedJailService : JailServiceProtocol {

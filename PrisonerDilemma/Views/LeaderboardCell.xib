@@ -73,12 +73,10 @@
                 <constraint firstAttribute="trailing" secondItem="7U6-jz-bTY" secondAttribute="trailing" constant="30" id="QyK-JQ-K3Z"/>
                 <constraint firstItem="uZY-Oj-YLA" firstAttribute="top" secondItem="omw-iS-Bpj" secondAttribute="bottom" constant="-5" id="Tcs-g7-tLF"/>
                 <constraint firstItem="qgJ-gg-U2H" firstAttribute="centerY" secondItem="1eg-1g-UqF" secondAttribute="centerY" id="XA0-Tb-yXY"/>
-                <constraint firstAttribute="bottom" secondItem="qgJ-gg-U2H" secondAttribute="bottom" constant="16" id="glu-Do-FXc"/>
                 <constraint firstItem="IJU-tO-ekZ" firstAttribute="top" secondItem="qgJ-gg-U2H" secondAttribute="top" constant="-19" id="h36-bA-ut1"/>
                 <constraint firstItem="7U6-jz-bTY" firstAttribute="top" secondItem="IJU-tO-ekZ" secondAttribute="bottom" constant="-24" id="kbf-DG-Xgf"/>
                 <constraint firstItem="uZY-Oj-YLA" firstAttribute="leading" secondItem="omw-iS-Bpj" secondAttribute="leading" id="m6F-Kp-rb6"/>
                 <constraint firstItem="omw-iS-Bpj" firstAttribute="centerY" secondItem="qgJ-gg-U2H" secondAttribute="centerY" constant="-18" id="qzC-e7-nGK"/>
-                <constraint firstItem="qgJ-gg-U2H" firstAttribute="top" secondItem="1eg-1g-UqF" secondAttribute="top" constant="17" id="s5t-Un-zop"/>
                 <constraint firstItem="qgJ-gg-U2H" firstAttribute="leading" secondItem="1eg-1g-UqF" secondAttribute="leading" constant="43" id="upD-52-blw"/>
             </constraints>
             <connections>
